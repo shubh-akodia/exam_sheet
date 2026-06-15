@@ -1,0 +1,174 @@
+/* 🌈 General Page Style */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* 👩 User Info */
+#userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 25px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+#userPhoto {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+#username {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+/* ⏰ Timer */
+#time {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  background: white;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #0d47a1;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+/* 🧠 Quiz Box */
+#heading {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+#box {
+  background: white;
+  width: 70%;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #0d47a1;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ✅ Option Box */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #bbdefb;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background: #f1f8ff;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* 🟦 Hover effect */
+.option:hover {
+  background: #e3f2fd;
+  transform: scale(1.01);
+}
+
+/* 🟢 Selected Option */
+.option input[type="radio"]:checked + label {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+/* ✅ Keep visible radio */
+.option input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #1976d2; /* Modern browsers support this */
+  cursor: pointer;
+}
+
+/* 👇 Make whole box clickable */
+.option label {
+  flex: 1;
+  cursor: pointer;
+  color: #0d47a1;
+  font-size: 17px;
+}
+
+/* Highlight selected box */
+.option input[type="radio"]:checked ~ label,
+.option input[type="radio"]:checked {
+  background-color: #bbdefb;
+  border-radius: 10px;
+}
+
+/* 📊 Counter */
+#counter {
+  text-align: center;
+  color: #1976d2;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+/* 🔘 Buttons */
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin: 20px 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  left: 220px;
+}
+
+
+#submitBtn {
+  background: #2e7d32;
+}
+
+/* 🎉 Done message */
+.done {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+#prevBtn
+{
+  position: absolute;
+  left: 200px;
+}
+#nextBtn
+{
+  position: absolute;
+  left: 350px;
+}
+#submitBtn
+{
+  position: absolute;
+  left: 1200px;
+}

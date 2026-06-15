@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+            font-awesome/6.4.0/css/all.min.css">
+            <link rel="stylesheet" href="css/index.css">
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+       
+<h2>Registration Form</h2>
+
+<label>Name:</label>
+<input type="text" id="name">
+<span id="name_error_msg"></span><br><br>
+
+<label>Father Name:</label>
+<input type="text" id="fname">
+<span id="fname_error_msg"></span><br><br>
+
+<label>Email:</label>
+<input type="text" id="email">
+<span id="email_error_msg"></span><br><br>
+
+<label>DOB:</label>
+<input type="date" id="dob">
+<span id="dob_error_msg"></span><br><br>
+
+<label>Mobile:</label>
+<input type="text" id="mobile">
+<span id="mobile_error_msg"></span><br><br>
+
+<label>Address:</label>
+<textarea id="address"></textarea>
+<span id="address_error_msg"></span><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender" class="gender" value="male"> Male
+<input type="radio" name="gender" class="gender" value="female"> Female
+<span id="gender_error_msg"></span><br><br>
+
+<label>Image:</label>
+<input type="file" id="image">
+<span id="image_error_msg"></span><br><br>
+
+<!-- <h3>Captcha</h3> -->
+<canvas id="captchaCanvas" width="200" height="50"></canvas><br>
+<input type="text" id="captcha_input" placeholder="Enter captcha">
+<!-- <button type="button" id="checkCaptcha">Check Captcha</button> -->
+<button type="button" id="refreshCaptcha">↻ Refresh</button>
+<div id="captcha_result"></div><br><br>
+
+<br>
+<button id="sub_btn" disabled>Submit</button>
+
+    </center>
+    </form>
+</body>
+</html>
